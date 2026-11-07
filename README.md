@@ -19,3 +19,15 @@ A ideia é simular uma automação de auditoria: - Peguei um tema simples do dia
 - `feat:` funcionalidade nova
 - `fix:` correção de erro
 - `docs:` mudança em documentação
+
+## Regra da conferência
+
+Para cada item, o script compara a quantidade da conta com a do prontuário:
+
+- prontuário maior que a conta: lança a diferença na conta
+- quantidades iguais: a conta confere
+- conta maior que o prontuário: abre pendência (a conta não é reduzida)
+
+## Como rodar
+
+    node index.js
